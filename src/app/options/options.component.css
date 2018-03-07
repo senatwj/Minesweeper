@@ -1,0 +1,12 @@
+div.options {
+  margin: 0 0 15px 0;
+}
+
+div.difficulty {
+  margin-top: 5px;
+}
+
+div.difficulty ul {
+  list-style: none;
+  display: flex;
+}

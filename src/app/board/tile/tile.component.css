@@ -1,0 +1,28 @@
+span {
+  cursor: pointer;
+  background-color: darkblue;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+}
+
+span.bomb {
+  background-color: yellow !important;
+}
+
+span.open {
+  background-color: lightblue;
+}
+
+span.flag {
+  color: yellow;
+}
+
+span.openedBomb {
+  background-color: red !important;
+}
+
+span.incorrectlyFlaggedBomb {
+  color: red;
+}

@@ -1,0 +1,4 @@
+<div class="stats" *ngIf="game">
+  <h2>{{game.time.seconds | i18nPlural: secondMapping}} - {{game.tilesOpened | i18nPlural: tileMapping}} opened - {{game.moves | i18nPlural: moveMapping}}</h2>
+  <h2 class="message" *ngIf="game.isGameOver">{{game.isWinner ? 'Winner!' : 'You Lost!'}}</h2>
+</div>

@@ -1,0 +1,5 @@
+<div class="board">
+  <div class="row" *ngFor="let row of board">
+    <tile *ngFor="let tile of row" [tile]="tile" (opened)="clickTile($event)" (flagged)="flagTile($event)"></tile>
+  </div>
+</div>

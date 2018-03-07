@@ -1,0 +1,13 @@
+<div class="options">
+  <div>
+    <button (click)="initializeNewGame()">New Game</button>
+  </div>
+  <div class="difficulty">
+    <ul>
+      <li *ngFor="let difficulty of options.difficulties">
+        <input type="radio" [(ngModel)]="options.difficulty" [value]="difficulty">
+        <span (click)="options.difficulty = difficulty">{{difficulty.NAME}} ({{difficulty.NUM_ROWS}}X{{difficulty.NUM_COLUMNS}}), {{difficulty.NUM_BOMBS}} Bombs</span>
+      </li>
+    </ul>
+  </div>
+</div>

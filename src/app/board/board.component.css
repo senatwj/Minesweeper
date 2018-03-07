@@ -1,0 +1,13 @@
+div.board {
+  display: flex;
+  flex-direction: column;
+  line-height: 23px;
+}
+
+div.row {
+  display: flex;
+  flex-direction: row;
+  min-height: 25px;
+}
+
+

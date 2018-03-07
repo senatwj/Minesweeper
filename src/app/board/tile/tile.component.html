@@ -1,0 +1,11 @@
+<span (click)="open()"
+      (contextmenu)="flag($event)"
+      [ngClass]="{bomb: tile.isBomb && tile.isOpen,
+      open: tile.isOpen,
+      flag: tile.isFlagged && !tile.isIncorrectlyFlaggedBomb,
+      openedBomb: tile.isOpenedBomb,
+      incorrectlyFlaggedBomb: tile.isIncorrectlyFlaggedBomb}">
+  <i class="fas fa-flag" *ngIf="tile.isFlagged && !tile.isIncorrectlyFlaggedBomb"></i>
+  <i class="fas fa-times" *ngIf="tile.isIncorrectlyFlaggedBomb"></i>
+  <i class="fas fa-bomb" *ngIf="tile.isBomb && tile.isOpen"></i>{{tile.isOpen ? (tile.isBomb ? '' : (tile.adjacentBombs == 0 ? '' : tile.adjacentBombs)) : ''}}
+</span>

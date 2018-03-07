@@ -1,0 +1,22 @@
+* {
+  /* make everything unselectable */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+board {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
